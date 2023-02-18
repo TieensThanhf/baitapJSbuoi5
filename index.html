@@ -8,11 +8,102 @@
 </head>
 <body>
 
+<!-- bài1  -->
+<h1>Quản lí tuyển sinh</h1>
+	<p>
+		<label>Điểm môn 1: </label>
+		<input type="number" id="diem_mon1" step="0.01">
+	</p>
+	<p>
+		<label>Điểm môn 2: </label>
+		<input type="number" id="diem_mon2" step="0.01">
+	</p>
+	<p>
+		<label>Điểm môn 3: </label>
+		<input type="number" id="diem_mon3" step="0.01">
+	</p>
+	<p>
+		<label>Khu vực ưu tiên: </label>
+		<select id="khu_vuc">
+			<option value="X">Không thuộc khu vực ưu tiên</option>
+			<option value="A">Khu vực A</option>
+			<option value="B">Khu vực B</option>
+			<option value="C">Khu vực C</option>
+		</select>
+	</p>
+	<p>
+		<label>Đối tượng ưu tiên: </label>
+		<select id="doi_tuong">
+			<option value="0">Không thuộc đối tượng ưu tiên</option>
+			<option value="1">Thi đua khen thưởng</option>
+			<option value="2">Con liệt sĩ</option>
+			<option value="3">Con thương binh, bệnh binh</option>
+		</select>
+	</p>
+	<p>
+		<button type="button" onclick="kiemTra()">Kiểm tra</button>
+	</p>
+	<p id="ket_qua"></p>
+
+	<br>
+<!-- bài2 -->
+<h1>Tính tiền điện</h1>
+<form>
+  <label for="name">Họ tên:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="kw">Số KW tiêu thụ:</label>
+  <input type="number" id="kw" name="kw">
+
+  <button type="button" id="calculate-btn" onclick="calculate()">Tính tiền điện</button>
+</form>
+<div id="result"></div>
+<br>
+<!-- bài3 -->
+<h1>Tính thuế thu nhập cá nhân</h1>
+<form>
+  <label for="hoten">Họ tên:</label>
+  <input type="text" id="hoten" name="hoten">
+  
+  <label for="tongthunhap">Tổng thu nhập năm:</label>
+  <input type="number" id="tongthunhap" name="tongthunhap">
+  
+  <label for="songuoiphuthuoc">Số người phụ thuộc:</label>
+  <input type="number" id="songuoiphuthuoc" name="songuoiphuthuoc">
+  
+  <input type="button" value="Tính thuế" onclick="tinhThue()">
+</form>
+
+<div id="ketqua"></div>
+<br>
+<!-- bài4 -->
+<h1>Tính hóa đơn cáp</h1>
+
+<form>
+  <label for="ma-kh">Mã khách hàng:</label>
+  <input type="text" id="ma-kh" name="ma-kh">
+  
+  <label for="loai-kh">Loại khách hàng:</label>
+  <select id="loai-kh" name="loai-kh">
+    <option value="nha-dan">Nhà dân</option>
+    <option value="doanh-nghiep">Doanh nghiệp</option>
+  </select>
+  
+  <label for="so-ket-noi">Số kết nối:</label>
+  <input type="number" id="so-ket-noi" name="so-ket-noi">
+  
+  <label for="so-kenh-cao-cap">Số kênh cao cấp:</label>
+  <input type="number" id="so-kenh-cao-cap" name="so-kenh-cao-cap">
+  
+  <button type="button" id="tinh-tien-btn">Tính tiền</button>
+</form>
+
+<div id="ket-qua"></div>
 
 
-    <script src="./JS/admissionsmanager.JS"></script>
-    <script src="./JS/cablecharge.JS"></script>
-    <script src="./JS/Electricitybill.JS"></script>
-    <script src="./JS/tax.JS"></script>
+    <script src="./JS/admin.JS"></script>
+    <script src="./JS/tiencap.JS"></script>
+    <script src="./JS/tiendien.JS"></script>
+    <script src="./JS/tienthue.JS"></script>
 </body>
 </html>
